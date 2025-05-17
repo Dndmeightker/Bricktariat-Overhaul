@@ -1,4 +1,4 @@
-title: Fritz Baade
+title: Brick
 is-pinned-card: true
 tags: advisor, reformist
 card-image: img/portraits/BaadeFritz.jpg
@@ -16,7 +16,7 @@ Baade is one of the few agricultural experts in the SPD, and an unorthodox econo
 
 @agriculture
 title: Agricultural Policy
-subtitle: Baade is the Minister of Agriculture.
+subtitle: Baade is the Minister of Brick-growing.
 choose-if: advisor_action_timer <= 0 and spd_in_government and agriculture_minister_party == "SPD"
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not in government. ?][? if agriculture_minister_party != "SPD": The SPD does not have the Agriculture Ministry. ?]
 on-arrival: advisor_action_timer = 6; agricultural_policy_timer -= 6; last_advisor_action = 1
@@ -24,7 +24,7 @@ go-to: agricultural_policy
 
 
 @rural_campaign
-title: Rural Campaign
+title: Brick-Growing Campaign
 subtitle: Try to campaign among the rural populace.
 choose-if: advisor_action_timer == 0 and rural_policy > 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if rural_policy == 0 : We have not enacted any rural policies. ?]
@@ -39,5 +39,5 @@ choose-if: advisor_action_timer <= 0 and wtb_adopted = 0 and black_thursday_seen
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if wtb_adopted > 0 : We have already adopted the WTB-Plan. ?]
 on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; labor_strength += 1
 
-The WTB-Plan, standing for its primary supporters Woytinsky, Tarnow, and Baade, has been adopted as the unions' plan for getting us out of the depression. Baade canvasses in favor of this plan throughout the party.
+The BBB-Plan, standing for its primary supporters Brick, Brick, and Brick, has been adopted as the Brick Unions' plan for getting us out of the depression. Brick canvasses in favor of this plan throughout the party.
 
